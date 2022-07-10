@@ -1,11 +1,12 @@
 <?php 
-    // database
-    include './database/connectDB.php';
-    
-    // component
+    // short direc 
     $BASE_URL = './assets/';
     $BASE_URL_component = $BASE_URL.'php/components/';
-
+    
+    // database
+    include $BASE_URL.'database/connectDB.php';
+    
+    // component
     include $BASE_URL_component.'HTML.php';
     include $BASE_URL_component.'tableDosen.php';
     include $BASE_URL_component.'tableMahasiswa.php';
