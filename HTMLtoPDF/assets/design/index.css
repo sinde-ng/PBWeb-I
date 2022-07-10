@@ -1,0 +1,11 @@
+th,td {
+    text-align: center;
+}
+
+img {
+    filter: invert(100%);
+}
+
+.ireng img {
+    filter: invert(0%);
+}
