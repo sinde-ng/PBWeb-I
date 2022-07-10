@@ -24,4 +24,18 @@
         ";
     }
 
+    function navbar($logo){
+        return "
+        
+        <header class='ireng'>
+            <img src='$logo' height='80px'>
+            <div class='title ms-4'>
+                <span class='shName'>STMIK WIDYA PRATAMA PEKALONGAN</span>
+                <span class='lgName'>Sekolah Tinggi Manajemen Informatika dan Komputer</span>
+            </div>
+        </header>
+        
+        ";
+    }
+
 ?>

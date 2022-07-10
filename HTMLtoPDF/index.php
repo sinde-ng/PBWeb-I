@@ -20,15 +20,20 @@
 ?>
 
 <!-- START body -->
-<form action="" method="post" class="container-fluid">
+<?=navbar($BASE_URL.'image/logo.png')?>
 
+<form action="" method="post" class="container-fluid">
     <!-- DOSEN -->
     <table class="table table-striped mb-5">
         <?=theadDOS($BASE_URL.'bootstrap-icons/')?>
 
         <tbody>
             <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
-        </tbody>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
+            </tbody>
     </table>
 
     <!-- MAHASISWA -->
@@ -37,14 +42,17 @@
 
         <tbody>
             <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
         </tbody>
     </table>
 </form>
 <!-- END body -->
 
-<?= 
-    ending(
-        $BASE_URL."bootstrap/js/bootstrap.js"
-    );
-?>
+<?=ending($BASE_URL."bootstrap/js/bootstrap.js");?>
 

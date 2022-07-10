@@ -28,22 +28,24 @@ function theadDOS($base_URL){
     <thead>
         <tr>
             <th colspan='6'>
-                <span class='d-flex align-items-center justify-content-center ireng'>
+                <span class='d-flex align-items-center justify-content-center ireng cardT'>
                     <img src='$base_URL"."person-lines-fill.svg' class='me-2' width='30px'>
                     <h3>Data Dosen</h3>
                 </span>
             </th>
         </tr>
         <tr>
-            <th colspan='6' class='d-flex gap-2'>
-                <a href='' class='btn btn-primary d-flex align-items-center'>
-                    <img src='$base_URL"."plus.svg' class='me-2'>
-                    Tambah
-                </a>
-                <a href='' class='btn d-flex align-items-center ireng'>
-                    <img src='$base_URL"."filetype-pdf.svg' class='me-2'>
-                    toPDF
-                </a>
+            <th colspan='6'>
+                <span class='d-flex gap-2'>
+                    <a href='./assets/web/tambah__dosen.php' class='btn btn-primary d-flex align-items-center'>
+                        <img src='$base_URL"."plus.svg' class='me-2'>
+                        Tambah
+                    </a>
+                    <a href='' class='btn d-flex align-items-center ireng'>
+                        <img src='$base_URL"."filetype-pdf.svg' class='me-2'>
+                        toPDF
+                    </a>
+                </span>
             </th>
         </tr>
         <tr class='table-dark'>

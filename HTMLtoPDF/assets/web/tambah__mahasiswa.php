@@ -1,37 +1,41 @@
 <?php 
+    // short direc 
+    $BASE_URL = './../';
+    $BASE_URL_component = $BASE_URL.'php/components/';
+    
+    // database 
+    include $BASE_URL.'database/connectDB.php';
 
-    include './../php/component.php';
-?>
+    // component
+    include $BASE_URL_component.'HTML.php';
+    include $BASE_URL_component.'card.php';
 
-<?= 
-    starting(
-        "STIMIK WP Pekalongan",
-        "./../bootstrap/css/bootstrap.css",
-        "",
-        "./../image/logo.png"
+    echo starting(
+        "Tambah Data Mahasiswa",
+        $BASE_URL."bootstrap/css/bootstrap.css",
+        $BASE_URL."design/addCard.css",
+        $BASE_URL."image/logo.png",
     );
 ?>
 
-<!-- START Body -->
-<form class="container" action="" method="post">
-    <h1>Data Mahasiswa</h1>
-    <a href=""></a>
-    <table class="table table-striped">
-        <thead class="table-dark">
-            <tr>
-                <th>No</td>
-                <th>Nama</td>
-                <th>NIM</td>
-                <th>Kelas</td>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+<!-- START body -->
+<form action="" method="post" class="container-fluid d-flex justify-content-center align-items-center">
+    <?php 
+      echo cardMHS($BASE_URL.'image/student.jpg','./../../');
+      
+      if (isset($_POST['btn-submit'])){
+        $dataMahasiswa = array(
+          $_POST['NIM'],
+          $_POST['NAMA'],
+          $_POST['KELAS'],
+          $_POST['NOTELP'],
+          $_POST['ALAMAT']
+        );
+
+        var_dump($dataMahasiswa);
+      }
+    ?>
 </form>
-<!-- END Body -->
+<!-- END body -->
 
-<?= 
-    ending(
-        "../bootstrap/js/bootstrap.js"
-    );
-?>
+<?=ending($BASE_URL.'bootstrap/js/bootstrap.js')?>
