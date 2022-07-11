@@ -28,11 +28,25 @@
         <?=theadDOS($BASE_URL.'bootstrap-icons/')?>
 
         <tbody>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
+        <?php
+                $query = "SELECT * FROM dosen";
+                $sql = mysqli_query($conn,$query);
+                $row = mysqli_num_rows($sql);
+                $no = 1;
+
+                if ($row > 0){
+                    while($data = mysqli_fetch_array($sql)){
+                        echo fieldDOS($no,$data['nip'],$data['nama'],$data['makul'],$data['telp'],$data['tempt']);
+                        $no++;
+                    }
+                } else {
+                    echo "
+                    <tr>
+                        <th colspan='7' align='center'>Data Kosong !!!</th>
+                    </tr>
+                    ";
+                }
+            ?>
         </tbody>
     </table>
 
@@ -41,14 +55,25 @@
         <?=theadMHS($BASE_URL.'bootstrap-icons/')?>
 
         <tbody>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
-            <?=fieldMHS(1,'21.240,0057','Muhammad Naufal Yafi','2P41','08976674731','Neptunus')?>
+            <?php
+                $query = "SELECT * FROM mahasiswa";
+                $sql = mysqli_query($conn,$query);
+                $row = mysqli_num_rows($sql);
+                $no = 1;
+
+                if ($row > 0){
+                    while($data = mysqli_fetch_array($sql)){
+                        echo fieldMHS($no,$data['nim'],$data['nama'],$data['kelas'],$data['telp'],$data['tempt']);
+                        $no++;
+                    }
+                } else {
+                    echo "
+                    <tr>
+                        <th colspan='7' align='center'>Data Kosong !!!</th>
+                    </tr>
+                    ";
+                }
+            ?>
         </tbody>
     </table>
 </form>
