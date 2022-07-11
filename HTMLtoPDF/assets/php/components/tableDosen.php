@@ -1,12 +1,13 @@
 <?php 
 
-function fieldDOS($no,$nip,$nama,$hp,$tmpt){
+function fieldDOS($no,$nip,$nama,$makul,$hp,$tmpt){
     return "
     
     <tr>
         <td>$no</td>
         <td>$nip</td>
         <td>$nama</td>
+        <td>$makul</td>
         <td>$hp</td>
         <td>$tmpt</td>
         <td class='gap-2'>
@@ -27,7 +28,7 @@ function theadDOS($base_URL){
     
     <thead>
         <tr>
-            <th colspan='6'>
+            <th colspan='7'>
                 <span class='d-flex align-items-center justify-content-center ireng cardT'>
                     <img src='$base_URL"."person-lines-fill.svg' class='me-2' width='30px'>
                     <h3>Data Dosen</h3>
@@ -35,9 +36,9 @@ function theadDOS($base_URL){
             </th>
         </tr>
         <tr>
-            <th colspan='6'>
+            <th colspan='7'>
                 <span class='d-flex gap-2'>
-                    <a href='./assets/web/tambah__dosen.php' class='btn btn-primary d-flex align-items-center'>
+                    <a href='./assets/web/manage__dosen.php' class='btn btn-primary d-flex align-items-center'>
                         <img src='$base_URL"."plus.svg' class='me-2'>
                         Tambah
                     </a>
@@ -65,6 +66,12 @@ function theadDOS($base_URL){
                 <span class='d-flex align-items-center justify-content-center'>
                     <img src='$base_URL"."person.svg' class='me-2'>
                     Nama Dosen
+                </span>
+            </th>
+            <th>
+                <span class='d-flex align-items-center justify-content-center'>
+                    <img src='$base_URL"."book.svg' class='me-2'>
+                    Mengampu Makul
                 </span>
             </th>
             <th>

@@ -11,7 +11,7 @@
     include $BASE_URL_component.'card.php';
 
     echo starting(
-        "Tambah Data Dosen",
+        "Kelola Data Mahasiswa",
         $BASE_URL."bootstrap/css/bootstrap.css",
         $BASE_URL."design/addCard.css",
         $BASE_URL."image/logo.png",
@@ -21,12 +21,13 @@
 <!-- START body -->
 <form action="" method="post" class="container-fluid d-flex justify-content-center align-items-center">
     <?php 
-      echo cardDosen($BASE_URL.'image/dosen.jpg','./../../');
+      echo cardMHS($BASE_URL.'image/student.jpg','./../../');
       
       if (isset($_POST['btn-submit'])){
-        $dataDosen = array(
-          $_POST['NIP'],
+        $dataMahasiswa = array(
+          $_POST['NIM'],
           $_POST['NAMA'],
+          $_POST['KELAS'],
           $_POST['NOTELP'],
           $_POST['ALAMAT']
         );

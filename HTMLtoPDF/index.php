@@ -28,12 +28,12 @@
         <?=theadDOS($BASE_URL.'bootstrap-icons/')?>
 
         <tbody>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
-            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','08975765','Pluto')?>
-            </tbody>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
+            <?=fieldDOS(1,'21.240.0057','Muhammad Naufal Yafi','Sosiologi','08975765','Pluto')?>
+        </tbody>
     </table>
 
     <!-- MAHASISWA -->

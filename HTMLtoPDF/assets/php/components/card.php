@@ -13,7 +13,7 @@ function cardDosen($link_img,$link_home){
           <input name='NOTELP' class='form-control mb-2' type='text' placeholder='No Telp' aria-label='default input example'>
           <input name='ALAMAT' class='form-control' type='text' placeholder='Alamat' aria-label='default input example'>
         </p>
-        <a href='$link_home' class='btn'>Kembali</a>
+        <a href='$link_home' class='btn'>Batal</a>
         <input name='btn-submit' type='submit' value='Simpan' class='btn btn-primary'>
       </div>
     </div>
@@ -35,7 +35,7 @@ function cardMHS($link_img,$link_home){
           <input name='NOTELP' class='form-control mb-2' type='text' placeholder='No Telp' aria-label='default input example'>
           <input name='ALAMAT' class='form-control' type='text' placeholder='Alamat' aria-label='default input example'>
         </p>
-        <a href='$link_home' class='btn'>Kembali</a>
+        <a href='$link_home' class='btn'>Batal</a>
         <input name='btn-submit' type='submit' value='Simpan' class='btn btn-primary'>
       </div>
     </div>

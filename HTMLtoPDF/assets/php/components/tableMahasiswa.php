@@ -38,7 +38,7 @@ function theadMHS($base_URL){
         <tr>
             <th colspan='6'>
                 <span class='d-flex gap-2'>
-                    <a href='./assets/web/tambah__mahasiswa.php' class='btn btn-primary d-flex align-items-center'>
+                    <a href='./assets/web/manage__mahasiswa.php' class='btn btn-primary d-flex align-items-center'>
                         <img src='$base_URL"."plus.svg' class='me-2'>
                         Tambah
                     </a>
